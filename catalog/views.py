@@ -1,8 +1,13 @@
 from django.shortcuts import render, HttpResponse
+from .models import Product
 
 # Create your views here.
 
 def home(request):
+    products = Product.objects.order_by('-created_at')[0:5]
+    for product in products:
+        print(product)
+
     return render(request, 'catalog/home.html')
 
 def contacts(request):
