@@ -31,3 +31,15 @@ class Product(models.Model):
         verbose_name = 'Продукт'
         verbose_name_plural = 'Продукты'
         ordering = ["name"]
+
+class Contact(models.Model):
+    country = models.CharField(max_length=64, verbose_name='Страна', help_text='Введите страну')
+    indentity = models.CharField(max_length=64, verbose_name='ИНН', help_text='Введите ИНН')
+    address = models.CharField(max_length=64, blank=True, null=True, verbose_name='Адрес', help_text='Введите адрес')
+
+    def __str__(self):
+        return self.country
+
+    class Meta():
+        verbose_name = 'Контакт'
+        verbose_name_plural = 'Контакты'
