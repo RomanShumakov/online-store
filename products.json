@@ -1,0 +1,41 @@
+[
+{
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+        "name": "macbook",
+        "description": null,
+        "image": "",
+        "category": 1,
+        "price": 120000,
+        "created_at": "2026-11-25",
+        "updated_at": "2026-11-25"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+        "name": "iphone 18  pro max",
+        "description": null,
+        "image": "",
+        "category": 2,
+        "price": 100000,
+        "created_at": "2026-11-25",
+        "updated_at": "2026-11-25"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+        "name": "samsung galaxy 20",
+        "description": null,
+        "image": "",
+        "category": 2,
+        "price": 100000,
+        "created_at": "2026-11-25",
+        "updated_at": "2026-11-25"
+    }
+}
+]
